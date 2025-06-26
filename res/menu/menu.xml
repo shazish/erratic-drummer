@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/change_perc"
+          android:icon="@drawable/menudrum"
+          android:title="Change\nSet">
+      	<menu>
+    	    <item android:id="@+id/menu1"
+    	          android:title="Jazz" />
+			<item android:id="@+id/menu2"
+    	          android:title="Metal" /> 
+			<item android:id="@+id/menu3"
+    	          android:title="Afro (experimental)" />       	              	        	     	    
+    	</menu>
+    </item>
+        <item android:id="@+id/preferences"
+          android:icon="@android:drawable/ic_menu_preferences"
+          android:title="App Preferences" />   
+    <item android:id="@+id/about"  
+          android:icon="@android:drawable/ic_menu_help"    
+          android:title="About" />         
+    <item android:id="@+id/rateit"
+          android:icon="@drawable/starsilver"
+          android:title="Rate it!" />     
+                      
+</menu>
