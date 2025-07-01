@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<resources>
-    <string-array name="density_array">
-        <item>Light</item>
-        <item>Normal</item>
-        <item>Dense</item>
-    </string-array>
-</resources>

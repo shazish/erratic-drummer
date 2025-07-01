@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+            <PreferenceCategory
+                android:title="Playback">
+                <CheckBoxPreference
+                        android:title="Delayless Transition"
+                        android:defaultValue="false"
+                        android:summary="Removes the silence time between patterns"
+                        android:key="delaylessTransition" />
+                <CheckBoxPreference
+                        android:title="Human Play"
+                        android:defaultValue="false"
+                        android:summary="Instruments will be played with variable strength"                    
+                        android:key="variableVolume" />                               
+       </PreferenceCategory>    
+        <PreferenceCategory
+                android:title="Drum Sequence Generator">
+          		<CheckBoxPreference
+                        android:title="Random Tempo"
+                        android:defaultValue="false"
+                        android:summary=""
+                        android:key="randomTempo" />   
+                <CheckBoxPreference
+                        android:title="Random Riff Length"
+                        android:defaultValue="false"
+                        android:summary=""
+                        android:key="randomLength" />        
+       </PreferenceCategory>    
+                                         
+</PreferenceScreen>         
