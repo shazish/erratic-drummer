@@ -5,7 +5,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.11.0")
+        classpath(libs.gradle)
     }
 }
 
@@ -25,8 +25,16 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags += ""
+                arguments += "-DANDROID_STL=c++_shared"
+            }
+        }
     }
-
+    buildFeatures {
+        prefab = true // Enable Prefab
+    }
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -40,12 +48,19 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    externalNativeBuild {
+        cmake {
+            path = file("src/main/cpp/CMakeLists.txt")
+            version = "3.22.1"
+        }
+    }
 }
 
 dependencies {
     implementation(libs.appcompat)
     implementation(libs.fragment) // Ensure this matches the key in libs.versions.toml
     implementation(libs.material)
+    implementation(libs.oboe)
     testImplementation(libs.junit)
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso.core)
