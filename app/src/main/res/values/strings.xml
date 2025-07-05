@@ -13,11 +13,11 @@
 	<string name="tabname1">Play</string>
 	<string name="tabname2">Tweak</string>
     <string name="aboutapp">
-            "Erratic Drummer is an automatic drum pattern generator for progressive musicians. You can customize drum patterns based"
-            "on tempo, length, pattern density, as well as tweek each drum instrument's presence.\n\n"
-            "This is a solo project and is meant to stay free. To keep it a clean experience, annoying ads of"
-            "any kind have been avoided. If Erratic Drummer gives you a kick, or helps you with songwriting ideas, please spend a minute to rate"
-            "it on Google Play!"
+            "Erratic Drummer is an automatic drum pattern generator. You can customize drum patterns based"
+            "on tempo, length, pattern density, as well as tweak presence of each drum instrument.\n\n"
+            "This is a passion project and is meant to stay free. To keep it a clean experience, ads of"
+            "any kind have been avoided. If 'Erratic Drummer' gives you a kick (pun intended!), or helps you with songwriting ideas, please spend a minute to rate"
+            "it on Google Play! Ciao!"
     </string>
      <string name="aboutappdonate">
 

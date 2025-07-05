@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="my.proj"
     android:installLocation="auto"
-    android:versionCode="13"
-    android:versionName="1.3.0.0705">
+>
     
     <supports-screens
                   android:smallScreens="false"
