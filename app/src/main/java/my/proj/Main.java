@@ -562,6 +562,37 @@ public class Main extends AppCompatActivity implements ActionBar.TabListener {
     	    	
     }
 
+    public void initializeAudioAsync() {
+        AsyncTask<Void, Void, Boolean> audioInitTask = new AsyncTask<Void, Void, Boolean>() {
+            @Override
+            protected Boolean doInBackground(Void... params) {
+                try {
+                    mSoundMaker.initializeSoundPool(0, true);
+                    return true;
+                } catch (Exception e) {
+                    Log.e("Main", "Failed to initialize audio", e);
+                    return false;
+                }
+            }
+
+            @Override
+            protected void onPostExecute(Boolean success) {
+                if (success) {
+                    Log.d("Main", "Audio initialization completed successfully");
+                    // Update UI with loaded sound bank names
+                    setInstrumentSeekBarStatus();
+                    // Generate a new sequence now that sounds are loaded
+                    mSoundMaker.generateSequence();
+                } else {
+                    Log.e("Main", "Audio initialization failed");
+                    // Show error to user
+                    Toast.makeText(Main.this, "Audio initialization failed. Please restart the app.", Toast.LENGTH_LONG).show();
+                }
+            }
+        };
+        audioInitTask.execute();
+    }
+
     public void fetchSavedDrumsList() {
         // once the list has been fetched
         showPopups.loadDrumList();

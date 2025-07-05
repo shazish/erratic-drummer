@@ -27,7 +27,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
-                cppFlags += ""
+                cppFlags += "-std=c++17"
                 arguments += "-DANDROID_STL=c++_shared"
             }
         }
@@ -51,9 +51,15 @@ android {
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
-            version = "3.22.1"
+            version = "4.0.2"
         }
     }
+    sourceSets {
+        getByName("main") {
+            jniLibs.srcDirs("src/main/jniLibs")
+        }
+    }
+    ndkVersion = "27.0.12077973"
 }
 
 dependencies {

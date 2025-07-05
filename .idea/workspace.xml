@@ -21,7 +21,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="635b2986-9e8e-4c1f-b3eb-8b762bf5cb74" name="Changes" comment="" />
+    <list default="true" id="635b2986-9e8e-4c1f-b3eb-8b762bf5cb74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/my/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/my/proj/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/my/proj/SoundMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/my/proj/SoundMaker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +40,12 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-36/android/media/SoundPool.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -53,15 +64,25 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "com.google.services.firebase.aqiPopupShown": "true",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
+    "last_opened_file_path": "C:/Users/shaah/Documents/GitHub/erratic-drummer",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "terminal"
+  },
+  "keyToStringList": {
+    "android.recentlyUsedThemes": [
+      "Theme.Material3.Dark",
+      "Theme.Material3.DayNight"
+    ]
   }
 }]]></component>
   <component name="PsdUISettings">
