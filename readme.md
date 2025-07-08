@@ -2,6 +2,7 @@
 <p>Erratic Drummer</p>
 </div> 
 
+<img src="https://github.com/user-attachments/assets/d40e7232-908a-42fd-b457-8e7584c95ffa" width="250px">
 
 ## What exactly is Erratic Drummer?
 
