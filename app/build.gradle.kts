@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
     }
     dependencies {
         classpath(libs.gradle)
@@ -16,6 +17,7 @@ plugins {
 android {
     namespace = "my.proj"
     compileSdk = 36
+    buildToolsVersion = "36.0.0"
 
     defaultConfig {
         applicationId = "my.proj"
@@ -32,9 +34,11 @@ android {
             }
         }
     }
+    
     buildFeatures {
         prefab = true // Enable Prefab
     }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -44,6 +48,7 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -51,7 +56,7 @@ android {
     externalNativeBuild {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
-            version = "4.0.2"
+            version = "3.22.1"
         }
     }
     sourceSets {
@@ -67,6 +72,7 @@ dependencies {
     implementation(libs.fragment) // Ensure this matches the key in libs.versions.toml
     implementation(libs.material)
     implementation(libs.oboe)
+    // implementation("com.github.pdrogfer:MidiDroid:1.1") // Commented out due to dependency issues
     testImplementation(libs.junit)
     androidTestImplementation(libs.junit.ext)
     androidTestImplementation(libs.espresso.core)

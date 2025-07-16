@@ -200,6 +200,16 @@ public class SoundMaker implements Runnable {
 		return new String[]{dmgroup[0], dminst[0], dmgroup[1], dminst[1]};
 	}
 
+	public boolean exportMidiFile(String filename) {
+		Log.d("SoundMaker", "Exporting MIDI file: " + filename);
+		try {
+			return MidiExporter.exportCurrentPattern(context, filename);
+		} catch (Exception e) {
+			Log.e("SoundMaker", "Error exporting MIDI file", e);
+			return false;
+		}
+	}
+
 	public void separatorOfSequences() {
 		if (!delaylessTransition) {
 			try {

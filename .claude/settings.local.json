@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(find:*)",
-      "Bash(adb:*)"
+      "Bash(adb:*)",
+      "Bash(grep:*)",
+      "Bash(./gradlew:*)",
+      "Bash(ls:*)",
+      "Bash(unzip:*)",
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(rmdir:*)",
+      "Bash(export ANDROID_HOME=~/android-sdk)",
+      "Bash(export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools)",
+      "Bash(echo:*)",
+      "Bash(export ANDROID_SDK_ROOT=~/android-sdk)",
+      "Bash(env)"
     ],
     "deny": []
   }

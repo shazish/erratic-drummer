@@ -22,10 +22,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="635b2986-9e8e-4c1f-b3eb-8b762bf5cb74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/my/proj/MidiExporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/45533__jesuswaffle__bassblast.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/97654__mikey-eff__mfmetal-palmmute-pwrchrd-estr-f.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/hardpcm.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/mute300.ogg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/my/proj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/my/proj/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/my/proj/SoundMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/my/proj/SoundMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/appicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/backrepeat.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/bluebrick.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/bluesmall.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/forward.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/greybrick.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/instrumentpresence.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/jog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/play_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/playzzz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/seekbkg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/separator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/unused/wrench.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +68,11 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\shaah\Documents\GitHub\erratic-drummer\app\shaazkichain.keystore" />
+    <option name="KEY_ALIAS" value="mykey" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +94,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Android App.app.executor": "Run",
+    "ApkExportedModule": "ER2.app",
+    "BundleExportedModule": "ER2.app",
+    "ExportApk.ApkPathForER2.app": "C:\\Users\\shaah\\Documents\\GitHub\\erratic-drummer\\app",
+    "ExportBundle.BundlePathForER2.app": "C:\\Users\\shaah\\Documents\\GitHub\\erratic-drummer\\app",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -76,9 +113,12 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "terminal"
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   },
   "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
+    ],
     "android.recentlyUsedThemes": [
       "Theme.Material3.Dark",
       "Theme.Material3.DayNight"
@@ -187,12 +227,12 @@
         </entry>
         <entry key="my.proj">
           <value>
-            <CheckInfo lastCheckTimestamp="1751319723677" />
+            <CheckInfo lastCheckTimestamp="1752635443662" />
           </value>
         </entry>
         <entry key="my.proj.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1751319723679" />
+            <CheckInfo lastCheckTimestamp="1752635443661" />
           </value>
         </entry>
       </map>

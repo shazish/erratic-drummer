@@ -1,12 +1,12 @@
 [versions]
 appcompat = "1.7.0"
 fragment = "1.8.4"
-gradle = "8.11.0"
+gradle = "8.11.1"
 material = "1.12.0"
 junit = "4.13.2"
 junitExt = "1.2.1"
 espresso = "3.6.1"
-androidGradlePlugin = "8.11.0"
+androidGradlePlugin = "8.11.1"
 oboe = "1.9.3"
 
 [libraries]

@@ -294,11 +294,21 @@ http://colorschemedesigner.com/
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_gravity="center"
-					android:gravity="right"
+					android:gravity="center"
 					android:layout_weight="1"
 					android:background="@drawable/transparent"
 					android:drawableTop="@drawable/button_save"
 					android:text="" />
+				<Button
+					android:id="@+id/midi_button"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="right"
+					android:layout_weight="1"
+					android:background="@drawable/transparent"
+					android:drawableTop="@drawable/button_save"
+					android:text="MIDI" />
 
 			</LinearLayout>
 

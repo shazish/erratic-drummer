@@ -11,7 +11,9 @@
                   android:anyDensity="true" />
 
     <uses-sdk android:minSdkVersion="30" android:targetSdkVersion="36" />
-
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 	<application
 	    android:icon="@drawable/ic_appicon"

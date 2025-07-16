@@ -60,7 +60,7 @@ public class Main extends AppCompatActivity implements ActionBar.TabListener {
 	LinearLayout repeatCounter;
 	Animation fadein, fadeout, slidein, slideout, buttonflash;
 
-    Button loadButton, saveButton;
+    Button loadButton, saveButton, midiButton;
 	ImageView playButton,  fwdButton, lockButton;
 
     LoadPopups showPopups = new LoadPopups(Main.this);
@@ -147,7 +147,9 @@ public class Main extends AppCompatActivity implements ActionBar.TabListener {
         fwdButton  = (ImageView) findViewById(R.id.fwd_button);
         loadButton = (Button) findViewById(R.id.load_button);
         saveButton = (Button) findViewById(R.id.save_button);
+        midiButton = (Button) findViewById(R.id.midi_button);
         saveButton.setVisibility(View.INVISIBLE); // won't be visible until a pattern is generated
+        midiButton.setVisibility(View.INVISIBLE); // won't be visible until a pattern is generated
         repeatCounter = (LinearLayout) findViewById(R.id.linearLayoutRepeatCounter);
         
         
@@ -233,6 +235,12 @@ public class Main extends AppCompatActivity implements ActionBar.TabListener {
             };
         });
 
+        midiButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                exportMidiFile();
+            };
+        });
+
 
         playButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -240,6 +248,7 @@ public class Main extends AppCompatActivity implements ActionBar.TabListener {
                 
             	SoundMaker.playKeyPressed = (!SoundMaker.playKeyPressed);
                 saveButton.setVisibility(View.VISIBLE);
+                midiButton.setVisibility(View.VISIBLE);
 
                 if (SoundMaker.playKeyPressed) {
 					playButton.setImageDrawable(getResources().getDrawable(R.drawable.button_play_on));
@@ -787,6 +796,25 @@ public class Main extends AppCompatActivity implements ActionBar.TabListener {
     	super.onResume(); 
     	Log.d("ERRATIC DRUMMER", "onResume");
     }
+
+	private void exportMidiFile() {
+		Log.d("ERRATIC DRUMMER", "Export MIDI clicked");
+		
+		if (mSoundMaker != null) {
+			String timestamp = String.valueOf(System.currentTimeMillis());
+			String filename = "erratic_drummer_" + timestamp;
+			
+			boolean success = mSoundMaker.exportMidiFile(filename);
+			
+			if (success) {
+				Toast.makeText(this, "MIDI file exported to Downloads/" + filename + ".mid", Toast.LENGTH_LONG).show();
+			} else {
+				Toast.makeText(this, "Failed to export MIDI file", Toast.LENGTH_SHORT).show();
+			}
+		} else {
+			Toast.makeText(this, "No pattern to export", Toast.LENGTH_SHORT).show();
+		}
+	}
 
 	@Override
 	public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
